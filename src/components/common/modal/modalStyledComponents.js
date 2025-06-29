@@ -9,7 +9,7 @@ const ModalContainer = styled(Box)`
 const ModalBackDrop = styled(FlexBox)`
     position: fixed;
     z-index: ${({theme}) => theme.zIndex.modal};
-    background: ${({theme}) => `${theme.palette.info.main}7a`};
+    background: ${({theme}) => `${theme.palette.info.main}90`};
     left: 0;
     right: 0;
     top: 0;
@@ -19,8 +19,8 @@ const ModalBackDrop = styled(FlexBox)`
 const ModalComponentContainer = styled(Card)`
     position: relative;
     display: flex;
-    width: ${({$isMobile}) => $isMobile ? '100%' : '80vw'};
-    height: ${({$isMobile}) => $isMobile ? '100%' : '70vh'};
+    width: ${({$isMobile}) => $isMobile ? '100%' : ''};
+    height: ${({$isMobile}) => $isMobile ? '100%' : ''};
     ${({theme, $isMobile}) => !$isMobile && `border-radius: ${theme.spacing(1)}`}
 `;
 

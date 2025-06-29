@@ -2,12 +2,12 @@ import { useState } from "react";
 import { apis, initialStates } from "../../utils/consts";
 import axios from "axios";
 
-function useData() {
-    const [data, setData] = useState(initialStates.data);
+function useVideos() {
+    const [videos, setVideos] = useState(initialStates.videos);
 
-    const fetchData = async () => {
+    const fetchVideos = async () => {
         try {
-            let res = await axios.get(apis.data);
+            let res = await axios.get(apis.videos);
 
             if (!res?.data?.success) {
                 const { err = {} } = res.data;
@@ -16,7 +16,7 @@ function useData() {
             } else if (res?.data?.success) {
                 const { data = {} } = res.data;
 
-                setData(data);
+                setVideos(data);
             };
         } catch (err) {
             const errorMessage = err?.reponse ? err.response : err;
@@ -26,9 +26,9 @@ function useData() {
     };
 
     return {
-        data,
-        fetchData
+        videos,
+        fetchVideos
     };
 };
 
-export default useData;
+export default useVideos;

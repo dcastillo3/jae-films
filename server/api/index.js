@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-//Tracks route
-router.use('/data', require('./data/data'));
+//Videos route
+router.use('/videos', require('./videos/videos'));
 
 router.use((req, res, next) => {
     const error = new Error('Not Found');

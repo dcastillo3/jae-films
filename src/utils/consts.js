@@ -1,11 +1,11 @@
 const apiDirectory = '/api';
 
 const apis = {
-    data: `${apiDirectory}/data`,
+    videos: `${apiDirectory}/videos`,
 };
 
 const initialStates = {
-    data: [],
+    videos: [],
 }
 
 export {
