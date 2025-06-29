@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import Vimeo from '@vimeo/player';
-import { useMediaQuery } from '../../hooks';
-import { Box, FlexBoxColumn, TextSmall } from '../styled';
+import { useMediaQuery } from '../../../hooks';
+import { Box, FlexBoxColumn, TextSmall } from '../../styled';
 import { VimeoPlayerVideoTitleContainer } from './vimeoPlayerStyledComponents';
+import { playerIdPrefix } from './vimeoPlayerConsts';
 
 function VimeoPlayer({ videoTitle, videoId }) {
     const playerRef = useRef(null);
-    const playerId = `vimeo-player-${videoId}`;
+    const playerId = `${playerIdPrefix}${videoId}`;
     const { isMobile, isDesktop } = useMediaQuery();
     const vimeoPlayerPadding = isDesktop ? [5] : [0];
     const vimeoPlayerWidth = isMobile ? '' : 640;

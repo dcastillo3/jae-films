@@ -2,10 +2,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import { MainRoutes } from './routes';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import { VideoContext } from './context';
+import { CopyContext, VideoContext } from './context';
 import { Box } from './components/styled';
 
 function App() {
+    const { fetchCopy } = useContext(CopyContext);
     const { fetchVideos } = useContext(VideoContext);
     const [loading, setLoading] = useState(true);
 
@@ -16,6 +17,7 @@ function App() {
             // Fetch independent apis
             const independentApis = await Promise.all([
                 fetchVideos(),
+                fetchCopy(),
             ]);
             
             // Fetch dependent apis

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box } from "../styled";
+import { Box } from "../../styled";
 
 const VimeoPlayerContainer = styled(Box)`
     width: 100vw; /* Full viewport width */

@@ -1,2 +1,2 @@
 export { default as AppContext } from './context';
-export { VideoContext } from './contextUtils';
+export { CopyContext, VideoContext } from './contextUtils';
