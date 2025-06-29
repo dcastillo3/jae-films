@@ -29,7 +29,7 @@ function Header() {
                     <HeaderFlexBoxContainer $isDesktop={isDesktop}>
                         {renderMobileMenu}
 
-                        <SubTitle>Name/Logo</SubTitle>
+                        <SubTitle>Jae Films</SubTitle>
 
                         {renderDesktopMenu}
                     </HeaderFlexBoxContainer>

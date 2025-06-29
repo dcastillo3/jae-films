@@ -1,19 +1,19 @@
 import React from 'react';
-import { useData } from '../hooks';
-import { DataContext } from './';
+import { useVideos } from '../hooks';
+import { VideoContext } from './';
 import { theme } from '../theme';
 import { ThemeProvider } from 'styled-components';
 import { buildCustomTheme } from './contextUtils';
 
 function AppContext({children}) {
-    const data = useData();
+    const videos = useVideos();
     const customTheme = buildCustomTheme(theme);
     
     return (
         <ThemeProvider theme={customTheme}>
-            <DataContext.Provider value={data}>
+            <VideoContext.Provider value={videos}>
                 {children}
-            </DataContext.Provider>
+            </VideoContext.Provider>
         </ThemeProvider>
     );
 };
