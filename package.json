@@ -1,7 +1,7 @@
 {
-  "name": "app-boilerplate",
+  "name": "jae-films",
   "version": "1.0.0",
-  "description": "App Boilerplate",
+  "description": "Portfolio website for Jae's Films",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcastillo3/app-boilerplate.git"
+    "url": "git+https://github.com/dcastillo3/jae-films.git"
   },
   "author": "dcastillo3",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dcastillo3/app-boilerplate/issues"
+    "url": "https://github.com/dcastillo3/jae-films/issues"
   },
-  "homepage": "https://github.com/dcastillo3/app-boilerplate#readme",
+  "homepage": "https://github.com/dcastillo3/jae-films#readme",
   "proxy": "http://localhost:8000",
   "dependencies": {
     "@emotion/react": "^11.11.4",

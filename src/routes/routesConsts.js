@@ -55,7 +55,7 @@ const generalRoutes = [
 const protectedRoutes = [
 ];
 
-const initialDocumentTitle = `App Boilerplate`;
+const initialDocumentTitle = `Jae Films`;
 
 export {
     menuRoutes,
