@@ -24,6 +24,8 @@
   "homepage": "https://github.com/dcastillo3/jae-films#readme",
   "proxy": "http://localhost:8000",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.0.2",
+    "@contentful/rich-text-types": "^17.0.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/abel": "^5.0.8",
@@ -39,6 +41,7 @@
     "axios": "^1.5.1",
     "body-parser": "^1.20.2",
     "concurrently": "^8.2.1",
+    "contentful": "^11.7.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "html-webpack-plugin": "^5.5.3",

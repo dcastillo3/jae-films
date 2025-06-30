@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { VideoContext } from '../../../context';
-import { VimeoPlayer } from '../../vimeoPlayer';
-import { Modal, modalProps } from '../../common';
+import { Modal, modalProps, VimeoPlayer } from '../../common';
 import { Box, Grid, cardProps } from '../../styled';
 import { useMediaQuery } from '../../../hooks';
 import { PortfolioContainer, VideoPosterImage } from './portfolioStyledComponents';

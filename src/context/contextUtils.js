@@ -1,5 +1,6 @@
 import { createContext } from "react";
 
+const CopyContext = createContext();
 const VideoContext = createContext();
 
 const buildCustomTheme = theme => {
@@ -11,6 +12,7 @@ const buildCustomTheme = theme => {
 };
 
 export {
+    CopyContext,
     VideoContext,
     buildCustomTheme
 };
