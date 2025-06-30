@@ -1,11 +1,21 @@
 import styled from 'styled-components';
-import { Image } from '../../styled';
+import { Image, SemanticSpan } from '../../styled';
 
 const ContentfulDocImage = styled(Image)`
-    width: 100%;
+    max-width: 100%;
     height: auto;
 `;
 
+const ContentfulUnderline = styled(SemanticSpan)`
+    text-decoration: underline;
+`;
+
+const ContentfulItalic = styled(SemanticSpan)`
+    font-style: italic;
+`;
+
 export {
-    ContentfulDocImage
+    ContentfulDocImage,
+    ContentfulUnderline,
+    ContentfulItalic
 };

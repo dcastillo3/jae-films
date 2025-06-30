@@ -10,7 +10,13 @@ const initialStates = {
     videos: [],
 }
 
+const anchorBlank = '_blank';
+
+const anchorNoReferrer = 'noopener noreferrer';
+
 export {
     apis,
-    initialStates
+    initialStates,
+    anchorBlank,
+    anchorNoReferrer
 };

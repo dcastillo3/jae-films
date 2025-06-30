@@ -25,6 +25,7 @@
   "proxy": "http://localhost:8000",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^16.0.2",
+    "@contentful/rich-text-types": "^17.0.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/abel": "^5.0.8",
