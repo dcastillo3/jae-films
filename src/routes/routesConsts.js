@@ -1,7 +1,8 @@
 import { Portfolio } from '../components/main/portfolio';
-import { PitchDeck } from '../components/main/pitchDeck';
+import { InDevelopment } from '../components/main/inDevelopment';
 import { Donate } from '../components/main/donate';
 import { Biography } from '../components/main/biography';
+import { Blog } from '../components/main/blog';
 import { NotFound } from '../components/main/notFound';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import QueuePlayNextIcon from '@mui/icons-material/QueuePlayNext';
@@ -13,36 +14,43 @@ import PersonIcon from '@mui/icons-material/Person';
 const menuRoutes = [
     {
         id: 1,
-        name: 'Works',
+        name: 'Portfolio',
         path: '/',
         icon: SlideshowIcon,
         Element: Portfolio
     },
     {
         id: 2,
-        name: 'Pitch',
-        path: '/pitch-deck',
+        name: 'In Development',
+        path: '/in-development',
         icon: QueuePlayNextIcon,
-        Element: PitchDeck
+        Element: InDevelopment
     },
     {
         id: 3,
+        name: 'Biography',
+        path: '/biography',
+        icon: PersonIcon,
+        Element: Biography
+    },
+    {
+        id: 4,
+        name: 'Blog',
+        path: '/blog',
+        icon: PersonIcon,
+        Element: Blog
+    },
+    {
+        id: 5,
         name: 'Donate',
         path: '/donate',
         icon: HandshakeIcon,
         Element: Donate
     },
-    {
-        id: 4,
-        name: 'About',
-        path: '/biography',
-        icon: PersonIcon,
-        Element: Biography
-    },
 ];
 
 const notFoundRoute = {
-    id: 5,
+    id: 6,
     name: 'Not Found',
     path: '*',
     Element: NotFound
